@@ -1,3 +1,3 @@
 # final-bit-front
 ## Autor: 
-## Daniel Armando Ciendúa Ricaurte
+Daniel Armando Ciendúa Ricaurte
