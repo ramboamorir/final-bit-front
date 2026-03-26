@@ -1,0 +1,47 @@
+/* 🔹 Estilos base (Mobile First) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 columna en móvil */
+  gap: 10px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* 🔹 Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+/* 🔹 Laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+
+/* 🔹 Pantallas grandes (≥ 1440px) */
+@media (min-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  }
+}
