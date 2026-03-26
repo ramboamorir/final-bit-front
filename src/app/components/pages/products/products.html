@@ -1,0 +1,19 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="bg-primary">Nombre</th>
+      <th scope="col">Categoria</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+      @for (product of products; track product._id) {
+        <tr>
+          <td>{{product.name}}</td>
+          <td> {{product.category}}</td>
+          <td>{{product.price | currency}}</td>
+        </tr>
+      }
+  </tbody>
+</table>
